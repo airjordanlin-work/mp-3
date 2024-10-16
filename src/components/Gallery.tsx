@@ -1,17 +1,17 @@
 
 import styled from "styled-components";
-import image1 from "../../../mp-3/src/assets/image1.jpg";
-import image2 from "../../../mp-3/src/assets/image2.jpg";
-import image3 from "../../../mp-3/src/assets/image3.jpg";
-import image4 from "../../../mp-3/src/assets/image4.jpg";
-import image5 from "../../../mp-3/src/assets/image5.jpg";
-import image6 from "../../../mp-3/src/assets/image6.jpg";
-import image7 from "../../../mp-3/src/assets/image7.jpg";
-import image8 from "../../../mp-3/src/assets/image8.jpg";
-import image9 from "../../../mp-3/src/assets/image9.jpg";
-import image10 from "../../../mp-3/src/assets/image10.jpg";
-import image11 from "../../../mp-3/src/assets/image11.jpg";
-import image12 from "../../../mp-3/src/assets/image12.jpg";
+import image1 from "../assets/image1.jpg";
+import image2 from "../assets/image2.jpg";
+import image3 from "../assets/image3.jpg";
+import image4 from "../assets/image4.jpg";
+import image5 from "../assets/image5.jpg";
+import image6 from "../assets/image6.jpg";
+import image7 from "../assets/image7.jpg";
+import image8 from "../assets/image8.jpg";
+import image9 from "../assets/image9.jpg";
+import image10 from "../assets/image10.jpg";
+import image11 from "../assets/image11.jpg";
+import image12 from "../assets/image12.jpg";
 
 const MainWrapper = styled.main`
     padding: 5%;
