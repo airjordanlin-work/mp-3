@@ -14,7 +14,7 @@ const MainWrapper = styled.main`
      width: 200%;
     min-height: 100vh;
     margin-top: 100%;
-    padding: 2%;  /* Reduced padding to allow more space */
+    padding: 2%; 
     background: #f0f4f8;
     animation: ${fadeIn} 0.8s ease-in-out;
     
@@ -28,7 +28,7 @@ const ButtonContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;  /* Expanded width */
+    width: 80%;  
 `;
 
 const InputLabel = styled.label`
@@ -42,7 +42,7 @@ const InputField = styled.input`
     margin-bottom: 5%;
     padding: 2%;
     font-size: calc(1rem + 0.5vw);
-    width: 90%;  /* Expanded input width */
+    width: 90%;  
     text-align: center;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -61,16 +61,15 @@ const ButtonGroup = styled.div`
     justify-content: center;
     gap: 2%;
     margin-bottom: 5%;
-    width: 90%;  /* Expanded button group width */
+    width: 90%;  
 `;
 
 const CalcButton = styled.button`
-    padding: 2%;  /* Reduced padding to keep consistent scaling */
+    padding: 2%;  
     font-size: calc(0.5rem + 0.5vw);
     background-color: #0073e6;
     color: white;
     cursor: pointer;
-    flex: 1 1 calc(25% - 10px);  /* Responsive button size */
     min-width: 80px;
     border: none;
     border-radius: 5px;
