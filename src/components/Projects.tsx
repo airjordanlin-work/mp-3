@@ -1,15 +1,26 @@
 import { useState } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const fadeIn = keyframes`
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+`;
 
 const MainWrapper = styled.main`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20%;
-    width: 100%;
+     width: 200%;
+    min-height: 100vh;
+    margin-top: 100%;
+    padding: 2%;  /* Reduced padding to allow more space */
+    background: #f0f4f8;
+    animation: ${fadeIn} 0.8s ease-in-out;
     
-    
+    @media screen and (max-width: 750px) {
+        width: 100%;
+    }
 `;
 
 const ButtonContainer = styled.div`
@@ -17,22 +28,31 @@ const ButtonContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 80%;  /* Expanded width */
 `;
 
 const InputLabel = styled.label`
     font-size: calc(0.8rem + 0.5vw);
     margin-bottom: 2%;
     color: #333;
+    animation: ${fadeIn} 1s ease-in-out;
 `;
 
 const InputField = styled.input`
     margin-bottom: 5%;
-    padding: 3%;
+    padding: 2%;
     font-size: calc(1rem + 0.5vw);
-    width: 70%;
+    width: 90%;  /* Expanded input width */
     text-align: center;
-    
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+
+    &:focus {
+        border-color: #0073e6;
+        box-shadow: 0 0 8px rgba(0, 115, 230, 0.6);
+    }
 `;
 
 const ButtonGroup = styled.div`
@@ -41,22 +61,31 @@ const ButtonGroup = styled.div`
     justify-content: center;
     gap: 2%;
     margin-bottom: 5%;
-    width: 100%;
-    
+    width: 90%;  /* Expanded button group width */
 `;
 
 const CalcButton = styled.button`
-    padding: 3%;
+    padding: 2%;  /* Reduced padding to keep consistent scaling */
     font-size: calc(0.5rem + 0.5vw);
     background-color: #0073e6;
     color: white;
     cursor: pointer;
-    width: 40%;
-  
+    flex: 1 1 calc(25% - 10px);  /* Responsive button size */
+    min-width: 80px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 
     &:hover {
         background-color: #005bb5;
         transform: scale(1.05);
+        box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    &:active {
+        transform: scale(0.98);
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     }
 `;
 
@@ -64,8 +93,9 @@ const OutputDiv = styled.div<{ isNegative: boolean }>`
     font-size: calc(1.5rem + 0.5vw);
     color: ${(props) => (props.isNegative ? "red" : "#333")};
     margin-top: 5%;
+    animation: ${fadeIn} 0.5s ease-in-out;
+    font-weight: bold;
 `;
-
 export default function Calculator() {
     const [first, setFirst] = useState("");
     const [second, setSecond] = useState("");
