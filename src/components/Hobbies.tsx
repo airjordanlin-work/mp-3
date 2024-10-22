@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import HobbiesImage from '../assets/hobbies.jpg';
+import HobbiesImage from '../../public/hobbies.jpg';
 
 const HobbiesWrapper = styled.div`
     padding: 5%;

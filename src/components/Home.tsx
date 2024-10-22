@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styled from 'styled-components';
-import Me from '../assets/Me.jpg';
+import Me from '../../public/Me.jpg';
 
 
 const HomeWrapper = styled.div`

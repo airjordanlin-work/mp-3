@@ -1,17 +1,17 @@
 
 import styled from "styled-components";
-import image1 from "../assets/image1.jpg";
-import image2 from "../assets/image2.jpg";
-import image3 from "../assets/image3.jpg";
-import image4 from "../assets/image4.jpg";
-import image5 from "../assets/image5.jpg";
-import image6 from "../assets/image6.jpg";
-import image7 from "../assets/image7.jpg";
-import image8 from "../assets/image8.jpg";
-import image9 from "../assets/image9.jpg";
-import image10 from "../assets/image10.jpg";
-import image11 from "../assets/image11.jpg";
-import image12 from "../assets/image12.jpg";
+import image1 from "../../public/image1.jpg";
+import image2 from "../../public/image2.jpg";
+import image3 from "../../public/image3.jpg";
+import image4 from "../../public/image4.jpg";
+import image5 from "../../public/image5.jpg";
+import image6 from "../../public/image6.jpg";
+import image7 from "../../public/image7.jpg";
+import image8 from "../../public/image8.jpg";
+import image9 from "../../public/image9.jpg";
+import image10 from "../../public/image10.jpg";
+import image11 from "../../public/image11.jpg";
+import image12 from "../../public/image12.jpg";
 
 const MainWrapper = styled.main`
     padding: 5%;

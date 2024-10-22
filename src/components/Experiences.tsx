@@ -1,6 +1,6 @@
 
 import styled from 'styled-components';
-import kumonImage from '../assets/kumon.jpg';
+import kumonImage from '../../public/kumon.jpg';
 
 // Styled components
 const MainWrapper = styled.main`
