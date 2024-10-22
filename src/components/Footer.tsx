@@ -1,5 +1,5 @@
 import {styled} from "styled-components";
-
+import {Link} from "react-router-dom";
 
 const FooterStyle = styled.footer`
     color: #fff; 
@@ -19,6 +19,6 @@ export default function Footer()
 {
     return (
 
-        <FooterStyle>&copy; All rights reserved to Jordan Lin <a href="https://github.com/airjordanlin-work">Credits</a></FooterStyle>
+        <FooterStyle>&copy; All rights reserved to Jordan Lin <Link to="https://github.com/airjordanlin-work">Credits</Link></FooterStyle>
     )
 }

@@ -9,12 +9,14 @@ const MainWrapper = styled.main`
     padding: 20%;
     width: 100%;
     
+    
 `;
 
 const ButtonContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
 `;
 
